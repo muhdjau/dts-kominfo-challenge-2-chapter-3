@@ -10,7 +10,7 @@ import (
 func StartServer() *gin.Engine {
 	router := gin.Default()
 
-	roleRouter := router.Group("/role")
+	roleRouter := router.Group("/roles")
 	{
 		roleRouter.POST("/", controllers.CreateRole)
 		roleRouter.GET("/", controllers.GetRole)
